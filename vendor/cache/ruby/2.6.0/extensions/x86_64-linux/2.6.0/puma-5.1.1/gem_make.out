@@ -1,0 +1,48 @@
+current directory: /home/rharuow/Documents/Harysson/Rails/first-steps/contact_list/vendor/cache/ruby/2.6.0/gems/puma-5.1.1/ext/puma_http11
+/home/rharuow/.rvm/rubies/ruby-2.6.6/bin/ruby -I /home/rharuow/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201230-28767-1bhsbyf.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+creating Makefile
+
+current directory: /home/rharuow/Documents/Harysson/Rails/first-steps/contact_list/vendor/cache/ruby/2.6.0/gems/puma-5.1.1/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /home/rharuow/Documents/Harysson/Rails/first-steps/contact_list/vendor/cache/ruby/2.6.0/gems/puma-5.1.1/ext/puma_http11
+make "DESTDIR="
+compiling http11_parser.c
+compiling mini_ssl.c
+mini_ssl.c: In function ‘get_dh1024’:
+mini_ssl.c:102:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  102 |   BIGNUM *p, *g;
+      |   ^~~~~~
+mini_ssl.c: In function ‘engine_init_server’:
+mini_ssl.c:156:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  156 |   ID sym_cert = rb_intern("cert");
+      |   ^~
+mini_ssl.c:161:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  161 |   ID sym_ca = rb_intern("ca");
+      |   ^~
+mini_ssl.c:231:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  231 |   DH *dh = get_dh1024();
+      |   ^~
+mini_ssl.c: In function ‘raise_error’:
+mini_ssl.c:323:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  323 |       int errexp = err & mask;
+      |       ^~~
+mini_ssl.c:301:6: warning: function might be candidate for attribute ‘noreturn’ [-Wsuggest-attribute=noreturn]
+  301 | void raise_error(SSL* ssl, int result) {
+      |      ^~~~~~~~~~~
+mini_ssl.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: /home/rharuow/Documents/Harysson/Rails/first-steps/contact_list/vendor/cache/ruby/2.6.0/gems/puma-5.1.1/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -m 0755 puma_http11.so ./.gem.20201230-28767-1t1ge9f/puma
