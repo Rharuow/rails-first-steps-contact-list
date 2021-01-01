@@ -10,3 +10,4 @@ environment.plugins.append(
 
 const { environment } = require('@rails/webpacker')
 module.exports = environment
+module.exports = webpack
