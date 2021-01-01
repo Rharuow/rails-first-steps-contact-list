@@ -1,4 +1,3 @@
-const { environment } = require('@rails/webpacker')
 const webpack = require('webpack')
 environment.plugins.append(
   'Provide',
@@ -8,4 +7,6 @@ environment.plugins.append(
     Popper: ['popper.js', 'default']
   })
 )
+
+const { environment } = require('@rails/webpacker')
 module.exports = environment
