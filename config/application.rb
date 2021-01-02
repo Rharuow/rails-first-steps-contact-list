@@ -18,5 +18,8 @@ module ContactList
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    
+    # i18n is a shotcut to internalization
+    config.i18n.default_locale = :'pt-BR'
   end
 end
