@@ -6,8 +6,12 @@ Rails.application.routes.draw do
   
   get 'sobre', to: 'static_pages#sobre'
   get 'contato', to: 'static_pages#contato'
+  get 'login', to: 'session#new'
+  post 'login', to: 'session#create'
+  delete 'sair', to: 'session#destroy' 
+
   
   resources :contacts
-  resources :users, only:[:new, :create]
+  resources :users, only:[:new, :create, :show]
 
 end
